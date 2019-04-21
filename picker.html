@@ -323,8 +323,9 @@ var items = [
 ];
 
 var myPicker = new picker.Picker({
-    items: items
-    defaultSettings: (
+    items: items,
+    localStorageKey: 'picker-state',
+    defaultSettings: {
         minBatchSize: 2,
         maxBatchSize: 4
     }
